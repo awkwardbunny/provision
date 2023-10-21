@@ -17,6 +17,6 @@ info "Linking dotfiles"
 for f in $PROV_PATH/dotfiles/.*; do ln -sf $f ~; done
 
 install_zsh
-
 setup_workspace
 install_pyenv
+install_build_tools

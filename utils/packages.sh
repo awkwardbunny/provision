@@ -19,7 +19,7 @@ install_pkgs () {
   info "Installing: $*"
   case $OS in
     Ubuntu|Debian)
-      ${SUDOCMD}apt install $@
+      ${SUDOCMD}apt install -y $@
       ;;
     *)
       echo "Unknown OS"
