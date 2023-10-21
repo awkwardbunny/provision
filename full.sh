@@ -20,3 +20,4 @@ install_zsh
 setup_workspace
 install_pyenv
 install_build_tools
+install_vscode
