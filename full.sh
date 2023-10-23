@@ -14,7 +14,7 @@ for f in $PROV_PATH/tasks/*; do source $f; done
 
 install_pkgs "vim curl htop tmux"
 info "Linking dotfiles"
-for f in $PROV_PATH/dotfiles/.*; do ln -sf $f ~; done
+for f in $PROV_PATH/dotfiles/.*; do if [ -f "$f" ]; then ln -sf $f ~; fi; done
 
 install_zsh
 setup_workspace
